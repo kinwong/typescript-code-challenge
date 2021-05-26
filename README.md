@@ -26,3 +26,18 @@ Your work will be evaluated primarily on:
  1. Fork this project on github.
  2. Update this README.md file with instructions on how to build/test/run your script.
  3. When you're finished, send us the URL of your public repository.
+
+## Instructions
+
+Simply type the following command to transform the `data.json` into `data-transformed.json`:
+
+```bash
+npm run start
+
+```
+
+Use the following commant to run all unit tests:
+
+```bash
+npm run test
+```

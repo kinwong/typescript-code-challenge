@@ -63,8 +63,8 @@ const transformInputRecord = (record: InputRecord): OrdersReport => {
   return order;
 };
 
-const ordersFromInputRecords = async (records: InputRecord[]): Promise<OrdersReport[]> => 
-Promise.resolve(records).then(all => all.map(record => transformInputRecord(record)));
+const ordersFromInputRecords = async (records: InputRecord[]): Promise<OrdersReport[]> =>
+  Promise.resolve(records).then((all) => all.map((record) => transformInputRecord(record)));
 
 /**
  * Transforms an array of input records to a output report in the format instructed.
@@ -78,4 +78,3 @@ export const transformInputRecords = async (records: InputRecord[]): Promise<Rep
   };
   return report;
 };
-

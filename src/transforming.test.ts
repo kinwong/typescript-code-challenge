@@ -3,7 +3,7 @@ import { InputRecord } from './records';
 import { transformInputRecords } from './transforming';
 
 describe('Reporting', () => {
-  it('should generate report as expected.', () => {
+  it('should generate report as expected.', async () => {
     const input: InputRecord[] = [
       {
         id: 1,
@@ -78,7 +78,7 @@ describe('Reporting', () => {
         }
       ]
     };
-    const actual = transformInputRecords(input);
+    const actual = await transformInputRecords(input);
     expect(actual).toEqual(expected);
   });
 });
