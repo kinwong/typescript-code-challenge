@@ -36,7 +36,7 @@ npm run start
 
 ```
 
-Use the following commant to run all unit tests:
+Use the following command to run all unit tests:
 
 ```bash
 npm run test
